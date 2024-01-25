@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\scss\\sass.sass","sass.css"],"names":[],"mappings":"AAAA;EACC,cAAA;EACA,iBAAA;ACCD;ADAC;EACC,WAAA;ACEF","file":"sass.css","sourcesContent":[".sass\r\n\tdisplay: block\r\n\tfont-size: Roboto\r\n\t&:hover\r\n\t\tcolor: #000\r\n",".sass {\n  display: block;\n  font-size: Roboto;\n}\n.sass:hover {\n  color: #000;\n}"]}

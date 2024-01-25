@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!-- <script defer="defer" type="text/javascript" src="js/sendmail.js"></script> -->
+	<script defer="defer" type="text/javascript" src="js/main.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form">
+			<form action="https://forms.un-static.com/forms/b24c6293546e8cbf17a8776c298f41e1ff2e7c38" class="pageclip-form"
+				method="post" id="form" class="form_body">
+				<form id="form" class="form_body">
+					<h1 class="form__title">Отправка данных на почту</h1>
+					<div class="form__item">
+						<label for="form-name" class="form__lable">Имя*:</label>
+						<input id="form-name" type="text" name="name" class="form__input _req" autocomplete=" "
+							placeholder="Enter your name">
+					</div>
+					<div class="form__item">
+						<label for="form-email" class="form__lable">E-mail*:</label>
+						<input id="form-email" type="email" name="email" class="form__input _req _email" autocomplete=" "
+							placeholder="Enter E-mail">
+					</div>
+					<div class="form__item">
+						<div class="form__lable">Левша или правша?</div>
+						<div class="options">
+							<div class="options__item">
+								<input id="form-right-hand" checked type="radio" value="right" name="hand" class="options__input">
+								<label for="form-right-hand" class="options__lable">
+									<span>Правша</span>
+								</label>
+							</div>
+							<div class="options__item">
+								<input id="form-left-hand" type="radio" value="left" name="hand" class="options__input">
+								<label for="form-left-hand" class="options__lable">
+									<span>Левша</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="form-massege" class="form__lable">Massege:</label>
+						<textarea id="form-massege" name="massege" placeholder="Enter your message..."
+							class="form__input"></textarea>
+					</div>
+					<div class="form__item">
+						<label for="form-select" class="form__lable">Возраст:</label>
+						<select id="form-select" name="age" class="select">
+							<option value="от 18 до 25" selected="selected">Молодой</option>
+							<option value="от 25 до 45">Старый</option>
+							<option value="от 45">Супер стар</option>
+						</select>
+					</div>
+					<div class="form__item">
+						<label for="form-image" class="form__lable">Прикрепить фото</label>
+						<div class="file">
+							<div class="file__item">
+								<input id="form-image" class="file__input" multiple accept=".jpg,.png,.gif" type="file" name="image">
+								<div class="file__button">Выбрать</div>
+							</div>
+							<div id="form-preview" class="file__preview"></div>
+						</div>
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="form-agreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+							<label for="form-agreement" class="checkbox__lable">
+								<span>
+									Я даю свое согласие на обработку персональных данных в
+									соответствии с
+									<a href="">условиями</a>*
+								</span>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="form__button">Отправить</button>
+				</form>
+		</div>
+
+	</div>
+</body>
+
+</html>

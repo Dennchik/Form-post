@@ -1,0 +1,13 @@
+.settings/
+/.idea
+.idea
+/.vscode
+.vscode
+desktop.ini
+node_modules
+Applications
+Temp
+!Temp
+temp
+Templates
+

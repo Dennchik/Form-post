@@ -12,9 +12,9 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->isHTML(true);
 
 // От кого письмо
-$to = ('awdes@yandex.ru');
+$mail->setFrom('104072970+Dennchik@users.noreply.github.com', 'Имя');
 // Кому отправить
-$from = trim($_POST['email']);
+$to->addAddress('awdes@yandex.ru', 'Имя');
 //Тема письма
 $mail->Subject = 'Скажи Привет!';
 // Рука

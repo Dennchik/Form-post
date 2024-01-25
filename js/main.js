@@ -10,26 +10,26 @@ document.addEventListener('DOMContentLoaded', function (e) {
 		let formData = new FormData(form);
 		formData.append('image', formImage.files[0]);
 
-		// if (error === 0) {
-		// 	form.classList.add('_sending');
-		// 	let respose = await fetch('index.html', {
-		// 		// metod: postMessage,
-		// 		metod: 'POST',
-		// 		body: formData
-		// 	});
-		// 	if (respose.ok) {
-		// 		let result = await respose.json();
-		// 		alert(result.message);
-		// 		formPerview.innerHTML = "";
-		// 		form.reset();
-		// 		form.classList.remove('_sending');
-		// 	} else {
-		// 		alert('Ошибка');
-		// 	}
-		// } else {
-		// 	alert('Заполните обязательные поля!');
-		// 	form.classList.remove('_sending');
-		// }
+		if (error === 0) {
+			form.classList.add('_sending');
+			let respose = await fetch('sendmail.php', {
+				// metod: postMessage,
+				metod: 'POST',
+				body: formData
+			});
+			if (respose.ok) {
+				let result = await respose.json();
+				alert(result.message);
+				formPerview.innerHTML = "";
+				form.reset();
+				form.classList.remove('_sending');
+			} else {
+				alert('Ошибка');
+			}
+		} else {
+			alert('Заполните обязательные поля!');
+			form.classList.remove('_sending');
+		}
 	}
 
 	function formValidate(form) {
